@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ty"
+#include "types.h"
 
 #define noEvol 255
 #define stoneThunder 101
