@@ -1,5 +1,7 @@
 #pragma once
 
+#include "ty"
+
 #define noEvol 255
 #define stoneThunder 101
 #define stoneMoon 102
