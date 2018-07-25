@@ -26,5 +26,8 @@
     <ClInclude Include="types.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Pokemon.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

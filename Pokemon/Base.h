@@ -19,12 +19,13 @@ struct pokemonBase{
 	const byte typ2;
 	const byte catchrate;
 	const uint exp;
-	const byte hp;
-	const byte attack;
-	const byte defense;
-	const byte spAttack;
-	const byte spDefense;
-	const byte speed;
+	const uint stats[6];
+	//const byte hp;
+	//const byte attack;
+	//const byte defense;
+	//const byte spAttack;
+	//const byte spDefense;
+	//const byte speed;
 	const byte numEvolutions;
 	const struct evolution *evolutions;
 };
@@ -35,7 +36,7 @@ struct evolution{
 };
 
 //									    dex   name         typ1     typ2      cr  exp   hp  atk  def  sat  sdf  spd  evo
-const struct pokemonBase Mew         = { 151, "Mew",       psycho,  keinTyp,  45,  64, 100, 100, 100, 100, 100, 100, 0, nullptr };
+const struct pokemonBase Mew         = { 151, "Mew",       psycho,  keinTyp,  45,  64, (100, 100, 100, 100, 100, 100), 0, nullptr };
 
 const struct pokemonBase Mewtu       = { 150, "Mewtu",     psycho,  keinTyp,   3, 220, 106, 110,  90, 154,  90, 130, 0, nullptr };
 
