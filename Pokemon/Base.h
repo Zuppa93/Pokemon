@@ -280,7 +280,7 @@ const struct pokemonBase Mauzi      = {  52, "Mauzi",      normal,  keinTyp, 255
 const struct pokemonBase Digdri     = {  51, "Digdri",     boden,   keinTyp,  50, 153,  35, 100,  50,  50,  70, 120, 0, nullptr };
 
 const struct evolution DigdaEvo1      = { 26, &Digdri };
-const struct pokemonBase Digda      = {  26, "Digda",      boden,   keinTyp, 255,  81,  10,  55,  25,  35,  45,  95, 1, { &DigdaEvo1 } };
+const struct pokemonBase Digda      = {  50, "Digda",      boden,   keinTyp, 255,  81,  10,  55,  25,  35,  45,  95, 1, { &DigdaEvo1 } };
 
 const struct pokemonBase Omot       = {  49, "Omot",       kaefer,  gift,     75, 138,  70,  65,  60,  90,  75,  90, 0, nullptr };
 
@@ -412,10 +412,155 @@ const struct pokemonBase Bisasam    = {   1, "Bisasam",    pflanze, gift,     45
 
 const struct pokemonBase *pokemons[152] = {
 	nullptr,
-	&Bisasam,
-	&Bisaknosp,
-	&Bisaflor,
-	&Glumanda,
-	&Glutexo,
-	&Glurak
+	&Bisasam,		//001
+	&Bisaknosp,		//002
+	&Bisaflor,		//003
+	&Glumanda,		//004
+	&Glutexo,		//005
+	&Glurak,		//006
+	&Schiggy,		//007
+	&Schillok,		//008
+	&Turtok,		//009
+	&Raupy,			//010
+	&Safcon,		//011
+	&Smettbo,		//012
+	&Hornliu,		//013
+	&Kokuna,		//014
+	&Bibor,			//015
+	&Taubsi,		//016
+	&Tauboga,		//017
+	&Tauboss,		//018
+	&Rattfratz,		//019
+	&Rattikarl,		//020
+	&Habitak,		//021
+	&Ibitak,		//022
+	&Rettan,		//023
+	&Arbok,			//024
+	&Pikachu,		//025
+	&Raichu,		//026
+	&Sandan,		//027
+	&Sandamer,		//028
+	&NidoranW,		//029
+	&Nidorina,		//030
+	&Nidoqueen,		//031
+	&NidoranM,		//032
+	&Nidorino,		//033
+	&Nidoking,		//034
+	&Piepi,			//035
+	&Pixi,			//036
+	&Vulpix,		//037
+	&Vulnona,		//038
+	&Pummeluff,		//039
+	&Knuddeluff,	//040
+	&Zubat,			//041
+	&Golbat,		//042
+	&Myrapla,		//043
+	&Duflor,		//044
+	&Giflor,		//045
+	&Paras,			//046
+	&Parasek,		//047
+	&Bluzuk,		//048
+	&Omot,			//049
+	&Digda,			//050
+	&Digdri,		//051
+	&Mauzi,			//052
+	&Snobilikat,	//053
+	&Enton,			//054
+	&Entoron,		//055
+	&Menki,			//056
+	&Rasaff,		//057
+	&Fukano,		//058
+	&Arkani,		//059
+	&Quapsel,		//060
+	&Quaputzi,		//061
+	&Quappo,		//062
+	&Abra,			//063
+	&Kadabra,		//064
+	&Simsala,		//065
+	&Machollo,		//066
+	&Maschock,		//067
+	&Machomei,		//068
+	&Knofensa,		//069
+	&Ultrigaria,	//070
+	&Sarzenia,		//071
+	&Tentacha,		//072
+	&Tentoxa,		//073
+	&Kleinstein,	//074
+	&Georok,		//075
+	&Geowaz,		//076
+	&Ponita,		//077
+	&Gallopa,		//078
+	&Flegmon,		//079
+	&Lahmus,		//080
+	&Magnetilo,		//081
+	&Magneton,		//082
+	&Porenta,		//083
+	&Dodu,			//084
+	&Dodri,			//085
+	&Jurob,			//086
+	&Jugong,		//087
+	&Sleima,		//088
+	&Sleimok,		//089
+	&Muschas,		//090
+	&Austos,		//091
+	&Nebulak,		//092
+	&Alpollo,		//093
+	&Gengar,		//094
+	&Onix,			//095
+	&Traumato,		//096
+	&Hypno,			//097
+	&Krabby,		//098
+	&Kingler,		//099
+	&Voltobal,		//100
+	&Lektrobal,		//101
+	&Owei,			//102
+	&Kokowei,		//103
+	&Tragosso,		//104
+	&Knogga,		//105
+	&Kicklee,		//106
+	&Nockchan,		//107
+	&Schlurp,		//108
+	&Smogon,		//109
+	&Smogmog,		//110
+	&Rihorn,		//111
+	&Rizeros,		//112
+	&Chaneira,		//113
+	&Tangela,		//114
+	&Kangama,		//115
+	&Seeper,		//116
+	&Seemon,		//117
+	&Goldini,		//118
+	&Golking,		//119
+	&Sterndu,		//120
+	&Starmie,		//121
+	&Pantimos,		//122
+	&Sichlor,		//123
+	&Rossana,		//124
+	&Elektek,		//125
+	&Magmar,		//126
+	&Pinsir,		//127
+	&Tauros,		//128
+	&Karpador,		//129
+	&Garados,		//130
+	&Lapras,		//131
+	&Ditto,			//132
+	&Evoli,			//133
+	&Aquana,		//134
+	&Blitza,		//135
+	&Flamara,		//136
+	&Porygon,		//137
+	&Amonitas,		//138
+	&Amoroso,		//139
+	&Kabuto,		//140
+	&Kabutops,		//141
+	&Aerodactyl,	//142
+	&Relaxo,		//143
+	&Arktos,		//144
+	&Zapdos,		//145
+	&Lavados,		//146
+	&Dratini,		//147
+	&Dragonir,		//148
+	&Dragoran,		//149
+	&Mewtu,			//150
+	&Mew			//151
 };
